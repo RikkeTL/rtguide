@@ -360,12 +360,7 @@ async function loadSections() {
     } catch(e) { console.warn('Could not load', s.file, e); }
   }
 }
-document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.getElementById('password-btn');
-  if (btn) btn.addEventListener('click', () => setTimeout(loadSections, 150));
-  const input = document.getElementById('password-input');
-  if (input) input.addEventListener('keydown', e => { if (e.key === 'Enter') setTimeout(loadSections, 150); });
-});
+document.addEventListener('DOMContentLoaded', loadSections);
 </script>
 
 </body>
