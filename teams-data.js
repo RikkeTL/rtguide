@@ -109,4 +109,5 @@ const people = [
   { name: "Carlin", role: "Product Marketer", nationality: "American", location: "USA", team: "marketing", fact: "Loves an outdoors-focused lifestyle: hiking, yoga, ballet, and pilates, especially living right next to nature trails." },
   { name: "Carly", role: "Social & Community Marketer", nationality: "American", location: "USA", team: "marketing", fact: "Deep into mystery, haunting, and eerie-history podcasts and YouTube channels as a favourite guilty-pleasure hobby." },
   { name: "Miikka", role: "Data Engineer", nationality: "Finnish", location: "Finland", team: "platform", fact: "Food interests include seasonal Finnish pastries (especially Runeberg torte), third-wave coffee, and natural wines." },
+  { name: "Nico", role: "Frontend Engineer", nationality: "Italian", location: "Italy", team: "frontend", fact: "Once served as 'mayor for a day' in Longiano and even officiated (unofficially and unknowingly illegally) weddings for friends." },
 
