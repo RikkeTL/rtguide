@@ -111,4 +111,5 @@ const people = [
   { name: "Miikka", role: "Data Engineer", nationality: "Finnish", location: "Finland", team: "platform", fact: "Food interests include seasonal Finnish pastries (especially Runeberg torte), third-wave coffee, and natural wines." },
   { name: "Nico", role: "Frontend Engineer", nationality: "Italian", location: "Italy", team: "frontend", fact: "Once served as 'mayor for a day' in Longiano and even officiated (unofficially and unknowingly illegally) weddings for friends." },
   { name: "Manoj", role: "Backend Engineer", nationality: "Indian", location: "Dubai", team: "backend", fact: "Enjoys simple, meaningful routines like cycling with his son, long phone-free walks, and spontaneous reflection time." },
+  { name: "Giuliano", role: "Data Engineer", nationality: "Brazilian", location: "Brazil", team: "platform", fact: "Studied economics instead of CS, but pivoted into tech by the third year of university and never left the industry." },
 
