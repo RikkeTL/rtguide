@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="styles.css">
+
 <section id="teams">
   <h2 class="section-title">The Teams</h2>
   <p class="section-intro">Doist is a delicate ecosystem made up of many interconnected parts - just over 100 people across 13 teams, from all over the world.</p>
@@ -43,15 +45,14 @@ function renderPeople(filter) {
     const initials = getInitials(p.name);
     return '<div class="person-card">'
       + '<div class="person-avatar" style="background:' + color + '">'
-      + '<img src="images/' + key + '.jpg" alt="' + p.name + '" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
-      + '<span class="initials" style="display:none">' + initials + '<\/span>'
+      + '<img src="images/' + key + '.jpg" alt="' + p.name + '" onerror="this.style.display=\'none\'">'
       + '<\/div>'
-      + '<div class="person-info">'
-      + '<h3 class="person-name">' + p.name + '<\/h3>'
-      + '<p class="person-role">' + p.role + '<\/p>'
-      + '<p class="person-location">' + p.location + '<\/p>'
-      + '<p class="person-fact">' + p.fact + '<\/p>'
-      + '<\/div><\/div>';
+      + '<div class="person-name">' + p.name + '<\/div>'
+      + '<div class="person-role">' + p.role + '<\/div>'
+      + '<div class="person-meta">' + p.nationality + ' · ' + p.location + '<\/div>'
+      + '<div class="person-fact">' + p.fact + '<\/div>'
+      + '<span class="person-team-tag">' + p.team + '<\/span>'
+      + '<\/div>';
   }).join('');
 }
 function filterTeam(team, btn) {
