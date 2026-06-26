@@ -105,4 +105,5 @@ const people = [
 ];  { name: "Michał", role: "Backend Engineer", nationality: "Polish", location: "Gran Canaria", team: "backend", fact: "Fostered dogs for a year, failed immediately with Frida, and now shares matching dog tattoos with his wife." },
 
   { name: "Maria", role: "Lifecycle Marketer", nationality: "Greek", location: "Greece", team: "marketing", fact: "Caught the travel bug after a first trip to Cuba in 2019 and has already visited 25+ countries, with Antarctica still topping the list." },
+  { name: "Alicia", role: "Product Marketing Lead", nationality: "American", location: "UK", team: "marketing", fact: "Long-term dream is to build a dog rescue and goat farm in Point Reyes, California, combining animal rescue, education, and environmental work." },
 
