@@ -102,4 +102,6 @@ const people = [
   { name: "Kaitlin (Kash)", role: "Engineer", nationality: "American", location: "USA", team: "platform", fact: "Former competitive debater who still thinks in argument structures and finds it extremely useful for writing RFCs." },
   { name: "Rain", role: "Engineer", nationality: "Estonian", location: "Estonia", team: "platform", fact: "Has a smallholding outside Tallinn where she grows vegetables and keeps chickens, and brings eggs to the annual retreat." },
   { name: "Samuel", role: "Engineer", nationality: "French", location: "France", team: "platform", fact: "Amateur archivist who has been digitising his family photo collection for several years and treats it with museum-level seriousness." },
-];
+];  { name: "Michał", role: "Backend Engineer", nationality: "Polish", location: "Gran Canaria", team: "backend", fact: "Fostered dogs for a year, failed immediately with Frida, and now shares matching dog tattoos with his wife." },
+
+
