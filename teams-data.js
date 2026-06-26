@@ -101,8 +101,7 @@ const people = [
   { name: "Hugo", role: "Engineer", nationality: "Portuguese", location: "Portugal", team: "platform", fact: "Builds elaborate mechanical keyboards as a hobby and has lost count of how many he has assembled and disassembled." },
   { name: "Kaitlin (Kash)", role: "Engineer", nationality: "American", location: "USA", team: "platform", fact: "Former competitive debater who still thinks in argument structures and finds it extremely useful for writing RFCs." },
   { name: "Rain", role: "Engineer", nationality: "Estonian", location: "Estonia", team: "platform", fact: "Has a smallholding outside Tallinn where she grows vegetables and keeps chickens, and brings eggs to the annual retreat." },
-  { name: "Samuel", role: "Engineer", nationality: "French", location: "France", team: "platform", fact: "Amateur archivist who has been digitising his family photo collection for several years and treats it with museum-level seriousness." },
-];  { name: "Michał", role: "Backend Engineer", nationality: "Polish", location: "Gran Canaria", team: "backend", fact: "Fostered dogs for a year, failed immediately with Frida, and now shares matching dog tattoos with his wife." },
+  { name: "Samuel", role: "Engineer", nationality: "French", location: "France", team: "platform", fact: "Amateur archivist who has been digitising his family photo collection for several years and treats it with museum-level seriousness." },  { name: "Michał", role: "Backend Engineer", nationality: "Polish", location: "Gran Canaria", team: "backend", fact: "Fostered dogs for a year, failed immediately with Frida, and now shares matching dog tattoos with his wife." },
 
   { name: "Maria", role: "Lifecycle Marketer", nationality: "Greek", location: "Greece", team: "marketing", fact: "Caught the travel bug after a first trip to Cuba in 2019 and has already visited 25+ countries, with Antarctica still topping the list." },
   { name: "Alicia", role: "Product Marketing Lead", nationality: "American", location: "UK", team: "marketing", fact: "Long-term dream is to build a dog rescue and goat farm in Point Reyes, California, combining animal rescue, education, and environmental work." },
@@ -112,4 +111,4 @@ const people = [
   { name: "Nico", role: "Frontend Engineer", nationality: "Italian", location: "Italy", team: "frontend", fact: "Once served as 'mayor for a day' in Longiano and even officiated (unofficially and unknowingly illegally) weddings for friends." },
   { name: "Manoj", role: "Backend Engineer", nationality: "Indian", location: "Dubai", team: "backend", fact: "Enjoys simple, meaningful routines like cycling with his son, long phone-free walks, and spontaneous reflection time." },
   { name: "Giuliano", role: "Data Engineer", nationality: "Brazilian", location: "Brazil", team: "platform", fact: "Studied economics instead of CS, but pivoted into tech by the third year of university and never left the industry." },
-
+];
