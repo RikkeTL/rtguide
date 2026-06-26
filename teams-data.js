@@ -104,4 +104,5 @@ const people = [
   { name: "Samuel", role: "Engineer", nationality: "French", location: "France", team: "platform", fact: "Amateur archivist who has been digitising his family photo collection for several years and treats it with museum-level seriousness." },
 ];  { name: "Michał", role: "Backend Engineer", nationality: "Polish", location: "Gran Canaria", team: "backend", fact: "Fostered dogs for a year, failed immediately with Frida, and now shares matching dog tattoos with his wife." },
 
+  { name: "Maria", role: "Lifecycle Marketer", nationality: "Greek", location: "Greece", team: "marketing", fact: "Caught the travel bug after a first trip to Cuba in 2019 and has already visited 25+ countries, with Antarctica still topping the list." },
 
