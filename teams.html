@@ -1,26 +1,63 @@
 <section id="teams">
-    <h2 class="section-title">The Teams</h2>
-    <p class="section-intro">Doist is a delicate ecosystem made up of many interconnected parts - just over 100 people across 13 teams, from all over the world.</p>
+  <h2 class="section-title">The Teams</h2>
+  <p class="section-intro">Doist is a delicate ecosystem made up of many interconnected parts - just over 100 people across 13 teams, from all over the world.</p>
 
-    <div class="team-filter">
-      <button class="filter-btn active" onclick="filterTeam('all', this)">All</button>
-      <button class="filter-btn" onclick="filterTeam('cxo', this)">CXO</button>
-      <button class="filter-btn" onclick="filterTeam('android', this)">Android</button>
-      <button class="filter-btn" onclick="filterTeam('apple', this)">Apple</button>
-      <button class="filter-btn" onclick="filterTeam('backend', this)">Backend</button>
-      <button class="filter-btn" onclick="filterTeam('cx', this)">Customer Experience</button>
-      <button class="filter-btn" onclick="filterTeam('design', this)">Design</button>
-      <button class="filter-btn" onclick="filterTeam('finance', this)">Finance</button>
-      <button class="filter-btn" onclick="filterTeam('frontend', this)">Frontend</button>
-      <button class="filter-btn" onclick="filterTeam('marketing', this)">Marketing</button>
-      <button class="filter-btn" onclick="filterTeam('operations', this)">Operations</button>
-      <button class="filter-btn" onclick="filterTeam('people', this)">People</button>
-      <button class="filter-btn" onclick="filterTeam('platform', this)">Platform</button>
-      <button class="filter-btn" onclick="filterTeam('product', this)">Product</button>
-    </div>
+  <div class="team-filter">
+    <button class="filter-btn active" onclick="filterTeam('all', this)">All</button>
+    <button class="filter-btn" onclick="filterTeam('cxo', this)">CXO</button>
+    <button class="filter-btn" onclick="filterTeam('android', this)">Android</button>
+    <button class="filter-btn" onclick="filterTeam('apple', this)">Apple</button>
+    <button class="filter-btn" onclick="filterTeam('backend', this)">Backend</button>
+    <button class="filter-btn" onclick="filterTeam('cx', this)">Customer Experience</button>
+    <button class="filter-btn" onclick="filterTeam('design', this)">Design</button>
+    <button class="filter-btn" onclick="filterTeam('finance', this)">Finance</button>
+    <button class="filter-btn" onclick="filterTeam('frontend', this)">Frontend</button>
+    <button class="filter-btn" onclick="filterTeam('marketing', this)">Marketing</button>
+    <button class="filter-btn" onclick="filterTeam('operations', this)">Operations</button>
+    <button class="filter-btn" onclick="filterTeam('people', this)">People</button>
+    <button class="filter-btn" onclick="filterTeam('platform', this)">Platform</button>
+    <button class="filter-btn" onclick="filterTeam('product', this)">Product</button>
+  </div>
 
-    <div class="people-grid" id="people-grid"></div>
-  </section>
+  <div class="people-grid" id="people-grid"></div>
+</section>
 
-  <hr class="divider">
 <script src="teams-data.js"></script>
+<script>
+function getInitials(name) {
+  return name.trim().split(/\s+/).map(w => w[0]).join('').slice(0,2).toUpperCase();
+}
+function getColor(name) {
+  const colors = ['#E8B4A0','#A8C5BD','#B8A9C9','#C9B8A8','#A8B8C9','#C9A8B8','#B8C9A8'];
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = name.charCodeAt(i) + ((h<<5)-h);
+  return colors[Math.abs(h) % colors.length];
+}
+function renderPeople(filter) {
+  const grid = document.getElementById('people-grid');
+  if (!grid) return;
+  const list = (!filter || filter === 'all') ? people : people.filter(p => p.team === filter);
+  grid.innerHTML = list.map(p => {
+    const key = p.imageKey || p.name;
+    const color = getColor(p.name);
+    const initials = getInitials(p.name);
+    return '<div class="person-card">'
+      + '<div class="person-avatar" style="background:' + color + '">'
+      + '<img src="images/' + key + '.jpg" alt="' + p.name + '" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+      + '<span class="initials" style="display:none">' + initials + '<\/span>'
+      + '<\/div>'
+      + '<div class="person-info">'
+      + '<h3 class="person-name">' + p.name + '<\/h3>'
+      + '<p class="person-role">' + p.role + '<\/p>'
+      + '<p class="person-location">' + p.location + '<\/p>'
+      + '<p class="person-fact">' + p.fact + '<\/p>'
+      + '<\/div><\/div>';
+  }).join('');
+}
+function filterTeam(team, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderPeople(team);
+}
+document.addEventListener('DOMContentLoaded', function() { renderPeople('all'); });
+</script>
