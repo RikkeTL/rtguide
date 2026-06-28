@@ -1,143 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>The Teams · Retreat Guide 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-  .people-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
-    padding: 24px 0;
-  }
-  .person-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  .person-avatar {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .person-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .person-name {
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  .person-role {
-    font-size: 0.85rem;
-    color: #555;
-  }
-  .person-meta {
-    font-size: 0.8rem;
-    color: #888;
-  }
-  .person-fact {
-    font-size: 0.82rem;
-    color: #444;
-    margin-top: 6px;
-    line-height: 1.5;
-  }
-  .person-team-tag {
-    display: inline-block;
-    font-size: 0.7rem;
-    background: #f0f0f0;
-    color: #666;
-    padding: 2px 8px;
-    border-radius: 20px;
-    margin-top: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    width: fit-content;
-  }
-  .team-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
-  }
-  .filter-btn {
-    padding: 6px 14px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background: #fff;
-    cursor: pointer;
-    font-size: 0.85rem;
-    transition: all 0.15s;
-  }
-  .filter-btn:hover { background: #f5f5f5; }
-  .filter-btn.active { background: #333; color: #fff; border-color: #333; }
-</style>
-
+<style>.people-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;padding:24px 0}.person-card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);display:flex;flex-direction:column;gap:6px}.person-avatar{width:64px;height:64px;border-radius:50%;overflow:hidden;margin-bottom:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:1.1rem}.person-avatar img{width:100%;height:100%;object-fit:cover}.person-name{font-weight:700;font-size:1rem}.person-role{font-size:.85rem;color:#555}.person-meta{font-size:.8rem;color:#888}.person-fact{font-size:.82rem;color:#444;margin-top:6px;line-height:1.5}.person-team-tag{display:inline-block;font-size:.7rem;background:#f0f0f0;color:#666;padding:2px 8px;border-radius:20px;margin-top:8px;text-transform:uppercase;letter-spacing:.05em;width:fit-content}.team-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}.filter-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.85rem;transition:all .15s}.filter-btn:hover{background:#f5f5f5}.filter-btn.active{background:#333;color:#fff;border-color:#333}</style>
+<script src="teams-data.js"></script>
+</head>
+<body>
+<div id="site">
+  <nav><div class="nav-inner">
+    <a class="nav-logo" href="index.html">Retreat Guide 2026</a>
+    <ul class="nav-links">
+      <li><a href="index.html#welcome">Welcome</a></li>
+      <li><a href="index.html#why-location">Location</a></li>
+      <li><a href="welcome-bag.html">Welcome Bag</a></li>
+      <li><a href="docs.html">Docs</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="fun-facts.html">Fun Facts</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div></nav>
+  <div id="mobile-nav">
+    <a href="index.html#welcome" onclick="toggleMenu()">Welcome</a>
+    <a href="index.html#why-location" onclick="toggleMenu()">Location</a>
+    <a href="welcome-bag.html" onclick="toggleMenu()">Welcome Bag</a>
+    <a href="docs.html" onclick="toggleMenu()">Docs</a>
+    <a href="teams.html" onclick="toggleMenu()">Teams</a>
+    <a href="fun-facts.html" onclick="toggleMenu()">Fun Facts</a>
+  </div>
+  <div class="page-content">
 <section id="teams">
   <h2 class="section-title">The Teams</h2>
   <p class="section-intro">Doist is a delicate ecosystem made up of many interconnected parts - just over 100 people across 13 teams, from all over the world.</p>
-
   <div class="team-filter">
-    <button class="filter-btn active" onclick="filterTeam('all', this)">All</button>
-    <button class="filter-btn" onclick="filterTeam('cxo', this)">CXO</button>
-    <button class="filter-btn" onclick="filterTeam('android', this)">Android</button>
-    <button class="filter-btn" onclick="filterTeam('apple', this)">Apple</button>
-    <button class="filter-btn" onclick="filterTeam('backend', this)">Backend</button>
-    <button class="filter-btn" onclick="filterTeam('cx', this)">Customer Experience</button>
-    <button class="filter-btn" onclick="filterTeam('design', this)">Design</button>
-    <button class="filter-btn" onclick="filterTeam('finance', this)">Finance</button>
-    <button class="filter-btn" onclick="filterTeam('frontend', this)">Frontend</button>
-    <button class="filter-btn" onclick="filterTeam('marketing', this)">Marketing</button>
-    <button class="filter-btn" onclick="filterTeam('operations', this)">Operations</button>
-    <button class="filter-btn" onclick="filterTeam('people', this)">People</button>
-    <button class="filter-btn" onclick="filterTeam('platform', this)">Platform</button>
-    <button class="filter-btn" onclick="filterTeam('product', this)">Product</button>
+    <button class="filter-btn active" onclick="filterTeam('all',this)">All</button>
+    <button class="filter-btn" onclick="filterTeam('cxo',this)">CXO</button>
+    <button class="filter-btn" onclick="filterTeam('android',this)">Android</button>
+    <button class="filter-btn" onclick="filterTeam('apple',this)">Apple</button>
+    <button class="filter-btn" onclick="filterTeam('backend',this)">Backend</button>
+    <button class="filter-btn" onclick="filterTeam('cx',this)">Customer Experience</button>
+    <button class="filter-btn" onclick="filterTeam('design',this)">Design</button>
+    <button class="filter-btn" onclick="filterTeam('finance',this)">Finance</button>
+    <button class="filter-btn" onclick="filterTeam('frontend',this)">Frontend</button>
+    <button class="filter-btn" onclick="filterTeam('marketing',this)">Marketing</button>
+    <button class="filter-btn" onclick="filterTeam('operations',this)">Operations</button>
+    <button class="filter-btn" onclick="filterTeam('people',this)">People</button>
+    <button class="filter-btn" onclick="filterTeam('platform',this)">Platform</button>
+    <button class="filter-btn" onclick="filterTeam('product',this)">Product</button>
   </div>
-
   <div class="people-grid" id="people-grid"></div>
 </section>
-
-<script src="teams-data.js"></script>
+  </div>
+</div>
 <script>
-function getInitials(name) {
-  return name.trim().split(/\s+/).map(w => w[0]).join('').slice(0,2).toUpperCase();
-}
-function getColor(name) {
-  const colors = ['#E8B4A0','#A8C5BD','#B8A9C9','#C9B8A8','#A8B8C9','#C9A8B8','#B8C9A8'];
-  let h = 0;
-  for (let i = 0; i < name.length; i++) h = name.charCodeAt(i) + ((h<<5)-h);
-  return colors[Math.abs(h) % colors.length];
-}
-function renderPeople(filter) {
-  const grid = document.getElementById('people-grid');
-  if (!grid) return;
-  const list = (!filter || filter === 'all') ? people : people.filter(p => p.team === filter);
-  grid.innerHTML = list.map(p => {
-    const key = p.imageKey || p.name;
-    const color = getColor(p.name);
-    const initials = getInitials(p.name);
-    return '<div class="person-card">'
-      + '<div class="person-avatar" style="background:' + color + '">'
-      + '<img src="images/' + key + '.jpg" alt="' + p.name + '" onerror="this.style.display=\'none\'">'
-      + '<\/div>'
-      + '<div class="person-name">' + p.name + '<\/div>'
-      + '<div class="person-role">' + p.role + '<\/div>'
-      + '<div class="person-meta">' + p.nationality + ' · ' + p.location + '<\/div>'
-      + '<div class="person-fact">' + p.fact + '<\/div>'
-      + '<span class="person-team-tag">' + p.team + '<\/span>'
-      + '<\/div>';
-  }).join('');
-}
-function filterTeam(team, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
-  renderPeople(team);
-}
-document.addEventListener('DOMContentLoaded', function() { renderPeople('all'); });
+function toggleMenu(){document.getElementById('mobile-nav').classList.toggle('open');}
 </script>
+<script>
+function getInitials(n){return n.trim().split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase();}
+function getColor(n){const c=['#E8B4A0','#A8C5BD','#B8A9C9','#C9B8A8','#A8B8C9','#C9A8B8','#B8C9A8'];let h=0;for(let i=0;i<n.length;i++)h=n.charCodeAt(i)+((h<<5)-h);return c[Math.abs(h)%c.length];}
+function renderPeople(f){const g=document.getElementById('people-grid');if(!g)return;const l=(!f||f==='all')?people:people.filter(p=>p.team===f);g.innerHTML=l.map(p=>{const k=p.imageKey||p.name;const col=getColor(p.name);const ini=getInitials(p.name);return'<div class="person-card"><div class="person-avatar" style="background:'+col+'"><img src="images/'+k+'.jpg" alt="'+p.name+'" onerror="this.parentElement.textContent=\''+ini+'\'">'+'</div><div class="person-name">'+p.name+'</div><div class="person-role">'+p.role+'</div><div class="person-meta">'+p.nationality+' · '+p.location+'</div><div class="person-fact">'+p.fact+'</div><span class="person-team-tag">'+p.team+'</span></div>';}).join('');}
+function filterTeam(t,b){document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));if(b)b.classList.add('active');renderPeople(t);}
+document.addEventListener('DOMContentLoaded',function(){renderPeople('all');});
+</script>
+</body>
+</html>

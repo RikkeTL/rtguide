@@ -582,3 +582,5 @@
     #mobile-nav { display: none; }
     #mobile-nav.open { display: flex; }
   }
+
+  .page-content { padding-top: 2rem; }

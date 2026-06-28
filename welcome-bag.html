@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Welcome Bag · Retreat Guide 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="site">
+  <nav><div class="nav-inner">
+    <a class="nav-logo" href="index.html">Retreat Guide 2026</a>
+    <ul class="nav-links">
+      <li><a href="index.html#welcome">Welcome</a></li>
+      <li><a href="index.html#why-location">Location</a></li>
+      <li><a href="welcome-bag.html">Welcome Bag</a></li>
+      <li><a href="docs.html">Docs</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="fun-facts.html">Fun Facts</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div></nav>
+  <div id="mobile-nav">
+    <a href="index.html#welcome" onclick="toggleMenu()">Welcome</a>
+    <a href="index.html#why-location" onclick="toggleMenu()">Location</a>
+    <a href="welcome-bag.html" onclick="toggleMenu()">Welcome Bag</a>
+    <a href="docs.html" onclick="toggleMenu()">Docs</a>
+    <a href="teams.html" onclick="toggleMenu()">Teams</a>
+    <a href="fun-facts.html" onclick="toggleMenu()">Fun Facts</a>
+  </div>
+  <div class="page-content">
 <section id="welcome-bag">
     <h2 class="section-title">Welcome Bag</h2>
     <p class="section-intro">Everything you'll find waiting for you when you arrive. A small token of appreciation for making the journey.</p>
@@ -24,5 +56,11 @@
       </div>
     </div>
   </section>
+  </div>
+</div>
+<script>
+function toggleMenu(){document.getElementById('mobile-nav').classList.toggle('open');}
+</script>
 
-  <hr class="divider">
+</body>
+</html>
