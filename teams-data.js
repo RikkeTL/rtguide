@@ -13,7 +13,7 @@ const people = [
   nationality: "American",
   location: "USA",
   team: "cxo",
-  fact: "Former figure skater who trained before school for 11 years and later DJ\"
+  fact: "Former figure skater who trained before school for 11 years and later DJ'd an indie-rock radio show during a long stretch living in Chile."
 },
 {
   imageKey: "Gonçalo",
@@ -46,7 +46,7 @@ const people = [
   nationality: "British",
   location: "UK",
   team: "android",
-  fact: "Is a certified PADI Divemaster and once dove in Iceland\"
+  fact: "Is a certified PADI Divemaster and once dove in Iceland's Silfra fissure between tectonic plates in winter, where the water was warmer than the air."
 },
 {
   name: "Julia",
@@ -62,7 +62,7 @@ const people = [
   nationality: "Polish",
   location: "Spain",
   team: "android",
-  fact: "Lives in Málaga, loves spicy food, enjoys Pokémon Go and long hikes, and is possibly the only person there who doesn\"
+  fact: "Lives in Málaga, loves spicy food, enjoys Pokémon Go and long hikes, and is possibly the only person there who doesn't like the beach."
 },
 {
   name: "Olga",
@@ -87,7 +87,7 @@ const people = [
   nationality: "Indian",
   location: "UAE",
   team: "android",
-  fact: "Huge space nerd with a Voyager 1 tattoo, loves rockets and propulsion systems, and once nerded out at Bletchley Park about Alan Turing\"
+  fact: "Huge space nerd with a Voyager 1 tattoo, loves rockets and propulsion systems, and once nerded out at Bletchley Park about Alan Turing's stuff."
 },
 {
   name: "Sergey",
@@ -119,7 +119,7 @@ const people = [
   nationality: "Spanish",
   location: "Spain",
   team: "apple",
-  fact: "Once ran a teen Apple-blog that got featured on WordPress\"
+  fact: "Once ran a teen Apple-blog that got featured on WordPress' homepage multiple times, even hosting a Spanish live coverage of an Apple event."
 },
 {
   name: "Erik",
@@ -248,7 +248,7 @@ const people = [
   nationality: "French",
   location: "France",
   team: "backend",
-  fact: "Started programming by tinkering with QBasic from a \"borrowed\" CD-ROM and now unwinds by fencing épée whenever he\"
+  fact: "Started programming by tinkering with QBasic from a \"borrowed\" CD-ROM and now unwinds by fencing épée whenever he's not deep in code."
 },
 {
   name: "Valente",
@@ -321,7 +321,7 @@ const people = [
   nationality: "Italian",
   location: "Italy",
   team: "cx",
-  fact: "Certified Italian sommelier who lives in a top wine region and still insists there\"
+  fact: "Certified Italian sommelier who lives in a top wine region and still insists there's always another grape, bottle, or vineyard worth discovering."
 },
 {
   name: "Melis",
@@ -329,7 +329,7 @@ const people = [
   nationality: "Turkish",
   location: "Cyprus",
   team: "cx",
-  fact: "Born in Nicosia, the world\"
+  fact: "Born in Nicosia, the world's only divided capital city, grew up trilingual while celebrating both Christmas and Eid."
 },
 {
   name: "Nina",
@@ -345,7 +345,7 @@ const people = [
   nationality: "Polish",
   location: "Poland",
   team: "cx",
-  fact: "Keeps a list of every song that\"
+  fact: "Keeps a list of every song that's ever caught her ear (now nearly 1,200 tracks long) and is slowly collecting each one on CD for a lifelong playlist."
 },
 {
   name: "Pierre",
@@ -385,7 +385,7 @@ const people = [
   nationality: "Brazilian",
   location: "Brazil",
   team: "cx",
-  fact: "Loves slow, contemplative films, especially Akira Kurosawa\"
+  fact: "Loves slow, contemplative films, especially Akira Kurosawa's Dreams, and prefers quiet time in nature over noise and crowds."
 },
 {
   name: "Stacey",
@@ -450,7 +450,7 @@ const people = [
   nationality: "Portuguese",
   location: "UK",
   team: "design",
-  fact: "Learning guitar thanks to The Last of Us, plays story-driven games only, and regularly snacks on cherry tomatoes growing within arm\"
+  fact: "Learning guitar thanks to The Last of Us, plays story-driven games only, and regularly snacks on cherry tomatoes growing within arm's reach."
 },
 {
   name: "Marija",
@@ -587,7 +587,7 @@ const people = [
   nationality: "British",
   location: "Gibraltar",
   team: "frontend",
-  fact: "From Gibraltar, speaks English and Spanish fluently, and appeared as an audience member in Clean Bandit\"
+  fact: "From Gibraltar, speaks English and Spanish fluently, and appeared as an audience member in Clean Bandit's Symphony music video."
 },
 {
   name: "Omar",
@@ -668,7 +668,7 @@ const people = [
   nationality: "Spanish",
   location: "Spain",
   team: "marketing",
-  fact: "Once appeared on the front page of Spain\"
+  fact: "Once appeared on the front page of Spain's biggest newspaper during a protest - captured mid-march, not posing, just living in the moment."
 },
 {
   name: "Denise",
@@ -742,7 +742,7 @@ const people = [
   nationality: "Uruguayan",
   location: "Uruguay",
   team: "platform",
-  fact: "Collects vinyl across rock and metal, including a prized second pressing of Black Sabbath\"
+  fact: "Collects vinyl across rock and metal, including a prized second pressing of Black Sabbath's 1970 debut album."
 },
 {
   name: "Dominique",
@@ -774,7 +774,7 @@ const people = [
   nationality: "Singaporean",
   location: "UK",
   team: "product",
-  fact: "Born on a rainy day and named after Joaquin Phoenix\"
+  fact: "Born on a rainy day and named after Joaquin Phoenix's sibling \"Rain,\" which makes every introduction feel like a tiny indie-film origin story."
 },
 {
   name: "Samuel",
