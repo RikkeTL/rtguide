@@ -327,7 +327,7 @@ const people = [
   name: "Melis",
   role: "CX Specialist",
   nationality: "Turkish",
-  location: "Cyprus",
+  location: "UAE",
   team: "cx",
   fact: "Born in Nicosia, the world's only divided capital city, grew up trilingual while celebrating both Christmas and Eid."
 },
