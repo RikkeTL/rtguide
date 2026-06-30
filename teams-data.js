@@ -327,7 +327,7 @@ const people = [
   name: "Melis",
   role: "CX Specialist",
   nationality: "Turkish",
-  location: "UAE",
+  location: "Cyprus",
   team: "cx",
   fact: "Born in Nicosia, the world's only divided capital city, grew up trilingual while celebrating both Christmas and Eid."
 },
@@ -788,7 +788,7 @@ const people = [
   name: "Michał",
   role: "Backend Engineer",
   nationality: "Polish",
-  location: "Gran Canaria",
+  location: "Spain",
   team: "backend",
   fact: "Fostered dogs for a year, failed immediately with Frida, and now shares matching dog tattoos with his wife."
 },
