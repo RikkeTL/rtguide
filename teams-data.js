@@ -788,7 +788,7 @@ const people = [
   name: "Michał",
   role: "Backend Engineer",
   nationality: "Polish",
-  location: "Spain",
+  location: "Gran Canaria",
   team: "backend",
   fact: "Fostered dogs for a year, failed immediately with Frida, and now shares matching dog tattoos with his wife."
 },
@@ -844,7 +844,7 @@ const people = [
   name: "Manoj",
   role: "Backend Engineer",
   nationality: "Indian",
-  location: "Dubai",
+  location: "UAE",
   team: "backend",
   fact: "Enjoys simple, meaningful routines like cycling with his son, long phone-free walks, and spontaneous reflection time."
 },
