@@ -794,6 +794,7 @@ const people = [
   fact: "Fostered dogs for a year, failed immediately with Frida, and now shares matching dog tattoos with his wife."
 },
 {
+  imageKey: "Maria",
   name: "Maria",
   role: "Lifecycle Marketer",
   nationality: "Greek",
@@ -802,6 +803,7 @@ const people = [
   fact: "Caught the travel bug after a first trip to Cuba in 2019 and has already visited 25+ countries, with Antarctica still topping the list."
 },
 {
+  imageKey: "Alicia",
   name: "Alicia",
   role: "Product Marketing Lead",
   nationality: "American",
@@ -810,6 +812,7 @@ const people = [
   fact: "Long-term dream is to build a dog rescue and goat farm in Point Reyes, California, combining animal rescue, education, and environmental work."
 },
 {
+  imageKey: "Carlin",
   name: "Carlin",
   role: "Product Marketer",
   nationality: "American",
@@ -818,6 +821,7 @@ const people = [
   fact: "Loves an outdoors-focused lifestyle: hiking, yoga, ballet, and pilates, especially living right next to nature trails."
 },
 {
+  imageKey: "Carly",
   name: "Carly",
   role: "Social & Community Marketer",
   nationality: "American",
