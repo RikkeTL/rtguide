@@ -732,7 +732,7 @@ const people = [
   name: "Artyom",
   role: "Engineer",
   nationality: "Russian",
-  location: "Croatia",
+  location: "Sweden",
   team: "platform",
   fact: "Deep into specialty coffee but prefers simple gear: hand grinder, Aeropress, V60, moka pot, and a French press - enough to cover every mood."
 },
@@ -830,6 +830,7 @@ const people = [
   fact: "Deep into mystery, haunting, and eerie-history podcasts and YouTube channels as a favourite guilty-pleasure hobby."
 },
 {
+  imageKey: "Miikka",
   name: "Miikka",
   role: "Data Engineer",
   nationality: "Finnish",
@@ -838,6 +839,7 @@ const people = [
   fact: "Food interests include seasonal Finnish pastries (especially Runeberg torte), third-wave coffee, and natural wines."
 },
 {
+  imageKey: "Nico",
   name: "Nico",
   role: "Frontend Engineer",
   nationality: "Italian",
@@ -855,6 +857,7 @@ const people = [
   fact: "Enjoys simple, meaningful routines like cycling with his son, long phone-free walks, and spontaneous reflection time."
 },
 {
+  imageKey: "Giuliano",
   name: "Giuliano",
   role: "Data Engineer",
   nationality: "Brazilian",
