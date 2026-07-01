@@ -785,6 +785,7 @@ const people = [
   fact: "Has appeared unknowingly in widely used Unsplash photos taken by his brother, with images viewed and reused across the internet for years."
 },
 {
+  imageKey: "Michał",
   name: "Michał",
   role: "Backend Engineer",
   nationality: "Polish",
@@ -841,6 +842,7 @@ const people = [
   fact: "Once served as 'mayor for a day' in Longiano and even officiated (unofficially and unknowingly illegally) weddings for friends."
 },
 {
+  imageKey: "Manoj",
   name: "Manoj",
   role: "Backend Engineer",
   nationality: "Indian",
