@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+(function() {
+  const isAuthenticated = sessionStorage.getItem('rtguide_authenticated') === 'true';
+  if (!isAuthenticated) {
+    document.documentElement.style.visibility = 'hidden';
+    document.documentElement.style.opacity = '0';
+    document.documentElement.style.display = 'none';
+    const password = prompt('Enter password to access this site:');
+    if (password === 'ball-viking-purple') {
+      sessionStorage.setItem('rtguide_authenticated', 'true');
+      document.documentElement.style.visibility = 'visible';
+      document.documentElement.style.opacity = '1';
+      document.documentElement.style.display = 'block';
+      window.location.reload();
+    } else {
+      document.documentElement.innerHTML = '<body style="display:flex; align-items:center; justify-content:center; height:100vh; font-family:sans-serif; font-size:18px; margin:0;">Access denied. Incorrect password.</body>';
+    }
+  } else {
+    document.documentElement.style.visibility = 'visible';
+    document.documentElement.style.opacity = '1';
+    document.documentElement.style.display = 'block';
+  }
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Fun Facts · Retreat Guide 2026</title>
@@ -73,7 +97,7 @@
         <span class="fact-label">Smallest team: Operations (1 member)</span>
       </div>
       <div class="fact-card">
-        <span class="fact-number">19</span>
+        <span class="fact-number">18</span>
         <span class="fact-label">Largest team: Customer Experience (18 members)</span>
       </div>
     </div>

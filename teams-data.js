@@ -188,7 +188,7 @@ const people = [
 },
 {
   name: "Felipe (Bidu)",
-  role: "Engineer",
+  role: "Lead Engineer",
   nationality: "Brazilian",
   location: "Portugal",
   team: "backend",
@@ -196,7 +196,7 @@ const people = [
 },
 {
   name: "Gil",
-  role: "Backend Engineer",
+  role: "Engineer",
   nationality: "Portuguese",
   location: "UK",
   team: "backend",
@@ -220,7 +220,7 @@ const people = [
 },
 {
   name: "Luke",
-  role: "Engineer",
+  role: "Lead Engineer",
   nationality: "British",
   location: "UK",
   team: "backend",
@@ -730,7 +730,7 @@ const people = [
 },
 {
   name: "Artyom",
-  role: "Engineer",
+  role: "Platform Engineer",
   nationality: "Russian",
   location: "Sweden",
   team: "platform",
@@ -738,7 +738,7 @@ const people = [
 },
 {
   name: "Luciano",
-  role: "Engineer",
+  role: "Platform Engineer",
   nationality: "Uruguayan",
   location: "Uruguay",
   team: "platform",
@@ -787,7 +787,7 @@ const people = [
 {
   imageKey: "Michał",
   name: "Michał",
-  role: "Backend Engineer",
+  role: "Engineer",
   nationality: "Polish",
   location: "Gran Canaria",
   team: "backend",
@@ -841,7 +841,7 @@ const people = [
 {
   imageKey: "Nico",
   name: "Nico",
-  role: "Frontend Engineer",
+  role: "Engineer",
   nationality: "Italian",
   location: "Italy",
   team: "frontend",
@@ -850,7 +850,7 @@ const people = [
 {
   imageKey: "Manoj",
   name: "Manoj",
-  role: "Backend Engineer",
+  role: "Engineer",
   nationality: "Indian",
   location: "UAE",
   team: "backend",

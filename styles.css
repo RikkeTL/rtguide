@@ -485,8 +485,12 @@
   /* LOCATION SECTION */
   .location-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    background: var(--coral-pale);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 3rem;
   }
 
   .location-subtitle {
@@ -513,35 +517,41 @@
     margin-bottom: 1rem;
   }
 
-  .amir-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .denmark-facts {
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     gap: 0.75rem;
   }
 
-  .amir-img {
+  .denmark-facts li {
+    color: var(--mid);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .denmark-facts .fact-emoji {
+    flex-shrink: 0;
+  }
+
+  .amir-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .amir-photo {
     width: 100%;
+    max-width: 420px;
     height: auto;
-    object-fit: contain;
+    display: block;
     border-radius: var(--border-radius-lg);
     border: 1px solid var(--border);
     background: var(--coral-pale);
-  }
-
-  .amir-img-wide {
-    grid-column: span 2;
-    aspect-ratio: 16/9;
-  }
-
-  .amir-placeholder {
-    grid-column: span 2;
-    background: var(--coral-pale);
-    border: 1px dashed var(--border);
-    border-radius: var(--border-radius-lg);
-    padding: 2rem;
-    text-align: center;
-    color: var(--mid);
-    font-size: 0.85rem;
   }
 
   @media (max-width: 700px) {
@@ -578,6 +588,7 @@
     nav { padding: 0 1.25rem; }
     section { padding: 3rem 1.25rem; }
     .welcome-box { padding: 2rem 1.5rem; }
+    .location-content { padding: 2rem 1.5rem; }
     .hero { padding: 3.5rem 1.25rem 3rem; }
     #mobile-nav { display: none; }
     #mobile-nav.open { display: flex; }
