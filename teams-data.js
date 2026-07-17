@@ -477,6 +477,15 @@ const people = [
   fact: "Learns a new hobby every year, including crochet, pottery, reading, and lately baking sourdough bread and pizza from scratch."
 },
 {
+  imageKey: "Olivia-design",
+  name: "Olivia",
+  role: "Brand Designer",
+  nationality: "Malay",
+  location: "Malaysia",
+  team: "design",
+  fact: "Loves crime procedurals like Bones and Criminal Minds and once considered studying forensic anthropology because of Bones."
+},
+{
   name: "Panos",
   role: "Product Designer",
   nationality: "Greek",
@@ -718,6 +727,15 @@ const people = [
   location: "USA",
   team: "people",
   fact: "Has traveled on mission trips across Africa and Latin America, building deep connections and co-founding a small mission organization."
+},
+{
+  imageKey: "Scott-people",
+  name: "Scott",
+  role: "Talent and People Operations Specialist",
+  nationality: "American",
+  location: "Germany",
+  team: "people",
+  fact: "Although originally from America, currently living in Düsseldorf, Germany!"
 },
 {
   imageKey: "Alex-platform",
